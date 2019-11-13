@@ -15,7 +15,7 @@ objects:
     strategy:
       type: "JenkinsPipeline"
       jenkinsPipelineStrategy:
-        jenkinsfilePath: src/main/resources/api/internal/Jenkinsfile
+        jenkinsfilePath: Jenkinsfile
         env:
           - name: SECRET_NAME
             value: ${SECRET_NAME}
@@ -41,7 +41,7 @@ parameters:
 - name: TARGET_INSTANCE
   required: true
 - name: GIT_REPO
-  value: https://github.com/torbjorndahlen/city-service-thorntail.git
+  value: https://github.com/torbjorndahlen/city-service-3scale.git
 - name: PUBLIC_STAGING_WILDCARD_DOMAIN
   required: true
 - name: PUBLIC_PRODUCTION_WILDCARD_DOMAIN

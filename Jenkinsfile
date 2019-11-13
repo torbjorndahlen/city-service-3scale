@@ -14,7 +14,7 @@ node() {
 
   stage("Prepare") {
     service = toolbox.prepareThreescaleService(
-        openapi: [filename: "src/main/resources/api/internal/city.json"],
+        openapi: [filename: "city.yaml"],
         environment: [ baseSystemName: "city-service-thorntail",
                        privateBaseUrl: params.PRIVATE_BASE_URL,
                        privateBasePath: "/",
