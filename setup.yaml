@@ -41,7 +41,7 @@ parameters:
 - name: TARGET_INSTANCE
   required: true
 - name: GIT_REPO
-  value: https://github.com/torbjorndahlen/city-service-3scale.git
+  value: https://github.com/TPX01/city-service-3scale.git
 - name: PUBLIC_STAGING_WILDCARD_DOMAIN
   required: true
 - name: PUBLIC_PRODUCTION_WILDCARD_DOMAIN
