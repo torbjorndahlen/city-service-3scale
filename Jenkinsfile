@@ -17,7 +17,6 @@ node() {
         openapi: [filename: "city.yaml"],
         environment: [ baseSystemName: "city-service-thorntail",
                        privateBaseUrl: params.PRIVATE_BASE_URL,
-                       privateBasePath: "/",
                        stagingPublicBaseURL: "https://city-apicast-staging." + params.PUBLIC_STAGING_WILDCARD_DOMAIN,
                        productionPublicBaseURL: "https://city-apicast-production." + params.PUBLIC_PRODUCTION_WILDCARD_DOMAIN ],
         toolbox: [ openshiftProject: params.NAMESPACE,
