@@ -59,9 +59,7 @@ node() {
     ]
     sh """set -e
     echo "Public Staging Base URL is ${proxy.sandbox_endpoint}"
-    curl -sfk -w "ListBeers: %{http_code}\n" -o /dev/null ${proxy.sandbox_endpoint}/beer
-    curl -sfk -w "GetBeer: %{http_code}\n" -o /dev/null ${proxy.sandbox_endpoint}/beer/Weissbier
-    curl -sfk -w "FindBeersByStatus: %{http_code}\n" -o /dev/null ${proxy.sandbox_endpoint}/beer/findByStatus/available
+      curl -sfk -w "List cities: %{http_code}\n" -o /dev/null ${proxy.sandbox_endpoint}/v1/countries/BE/cities
     """
   }
 
